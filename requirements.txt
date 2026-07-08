@@ -4,3 +4,4 @@ redis>=4.5.0
 pydantic
 prometheus-client
 structlog
+python-json-logger
