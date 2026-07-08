@@ -82,10 +82,7 @@ async def work(n: int = 1):
 
 @app.get("/metrics")
 async def metrics():
-    return JSONResponse(
-        content=generate_latest().decode('utf-8'),
-        media_type=CONTENT_TYPE_LATEST
-    )
+    return generate_latest()
 
 @app.get("/healthz")
 async def healthz():
